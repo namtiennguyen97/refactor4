@@ -1,20 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: phanluan
- * Date: 26/10/2018
- * Time: 22:56
- */
+
 require __DIR__ . "/../src/Cylinder.php";
 
 use PHPUnit\Framework\TestCase;
 
 class CylinderTest extends TestCase
 {
-    /**
-     *Test
-     *DisplayName("Testing getVolume(0, 0)")
-     */
+
     public function testGetVolume0And0()
     {
         $radius = 0;
@@ -25,12 +17,6 @@ class CylinderTest extends TestCase
         $result = $cylinder->getVolume($radius, $height);
         $this->assertEquals($expected, $result);
     }
-
-    /**
-     *Test
-     *DisplayName("Testing getVolume(1, 2)")
-     */
-
     public function testGetVolume1And2()
     {
         $radius = 1;
